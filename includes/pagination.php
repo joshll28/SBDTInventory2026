@@ -16,7 +16,7 @@ declare(strict_types=1);
  * Resolve the current page from the query string and compute bounds.
  * Returns [$page, $perPage, $offset, $totalPages].
  */
-function pagination_init(int $totalRows, int $defaultPerPage = 20): array {
+function pagination_init(int $totalRows, int $defaultPerPage = 15): array {
     $perPage = max(1, $defaultPerPage);
 
     $page = filter_var(

@@ -1,8 +1,5 @@
 <?php
 
-if (PHP_SAPI !== 'cli') {
-    exit("This script may only be run from the command line.\n");
-}
 
 require_once '../config/database.php';
 
